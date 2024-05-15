@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengingat Tugas</title>
+</head>
+<body>
+    <style>
+        .btn {
+            border-radius: 15px;
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            align-self: center;
+                }
+
+
+         .btn:hover {
+          background-color: RoyalBlue;
+         }
+
+    </style>
+    <h1>Tambah Pengingat Tugas</h1>
+    <h2>{{ documents1 }}</h2>
+    <form action="/submit" method="post">
+        <label for="tugasapa">Tugas Apa?</label>
+        <input type="text" id="tugasapa" name="tugasapa" autocomplete="off" required>
+        <br>
+        <label for="deadline">Tanggal kumpul:</label>
+        <input id="deadline" name="deadline" autocomplete="off" required>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+    </form>
+    <h1>Hilangkan/Selesai Tugas</h1>
+    <h3>Tulis ObjectId untuk hapus</h3>
+    <form action="/remove" method="post">
+        <input type="text" id="remove" name="remove" autocomplete="off" required>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <a href="https://github.com/Rostislav12345" class="btn">Please follow my github, i will make this public on my Github</a>
+</body>
+</html>
